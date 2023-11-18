@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build-css": "tailwindcss build src/input.css -o src/styles.css"
+  },
+  "dependencies": {
+    "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
