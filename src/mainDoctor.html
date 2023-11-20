@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="darkmode.css" />
+    <title>HarmonyCare</title>
+</head>
+<body class="bg-gray-100 dark:bg-black">
+    <!--Navbar-->
+    <nav class="w-screen mt-2 pr-4 flex justify-end">
+        <div class="dark:bg-gray-900 justify-center flex flex-row items-center">
+            <div class="flex flex-row justify-between toggle">
+                <label for="dark-toggle" class="flex items-center cursor-pointer">
+                    <div class="relative">
+                    <input type="checkbox" name="dark-mode" id="dark-toggle" class="checkbox hidden">
+                    <div class="block border-[1px] dark:border-white border-gray-900 w-10 h-6 rounded-full"></div>
+                    <div class="dot absolute left-1 top-1 dark:bg-white bg-gray-800 w-4 h-4 rounded-full transition"></div>
+                    </div>
+                    <div class="ml-3 dark:text-white text-gray-900 text-sm">
+                    Dark Mode
+                    </div>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <main class="w-screen">
+        <div id="mi-perfil-section" class="p-2 w-full flex flex-col items-center hidden">
+            <!--Mi perfil-->
+            <div id="#perfilfoto"class="flex flex-col items-center text-center relative">
+                <img class="mr-2 h-36 w-36 rounded-full object-cover hover:opacity-40 hover:cursor-pointer"src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                <p id="#cambiarfoto" class="absolute left-1/4 right-1/4 top-1/2 bottom-1/2 hidden">Cambiar foto</p>
+            </div>
+            <form id="perfilForm" class="w-full md:w-1/3 mt-2 p-4">
+                <div class="mb-4">
+                    <label for="nombre" class="block text-sm font-medium text-red-600 dark:text-white">Nombre</label>
+                    <div class="flex justify-center items-center">
+                        <input type="text" id="nombre" name="nombre" placeholder="Federico Diaz" disabled class="mt-1 p-2 w-full border border-black-600 rounded">
+                        <button id="editnombre" type="button" class="btn rounded bg-gray-200 w-24 ml-2 p-2 font-medium hover:bg-gray-300">Editar</button>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-red-600 dark:text-white">Email</label>
+                    <div class="flex justify-center items-center">
+                        <input type="text" id="email" name="email" placeholder="doctor@gmail.com" disabled class="mt-1 p-2 w-full border border-black-600 rounded">
+                        <button id="editemail" type="button" class="btn rounded bg-gray-200 w-24 ml-2 p-2 font-medium hover:bg-gray-300 ">Editar</button>
+                    </div>
+                </div>
+            </form> 
+        </div>
+        <div id="chats-section" class="">
+            <div class="p-2">
+                <h2 class="text-lg font-semibold text-gray-900 dark:text-white">Chats recientes</h2>
+            </div>
+            <!--Chat cards-->
+            <div class="bg-white w-full p-2 border-b-2 border-gray-200 dark:bg-gray-500">
+                <div class="flex items-start">
+                    <div class="w-1/5 md:w-24">
+                        <img class="mr-2 h-16 w-16 rounded-full object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
+                    </div>
+                    <div class="w-4/5 h-full flex flex-col justify-between">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-base font-semibold text-gray-900  dark:text-white">Maria Sharapova</h3>
+                            <span class="text-sm text-gray-800 text  dark:text-white">19:45</span>
+                        </div>
+                      <p class="block text-xs font-normal text-gray-500  dark:text-white">Buen dia doc! Queria comunicarme para reservar un turno.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="bg-white w-full p-2 border-b-2 border-gray-200 dark:bg-gray-500">
+                <div class="flex items-start">
+                    <div class="w-1/5 md:w-24">
+                        <img class="mr-2 h-16 w-16 rounded-full object-cover" src="https://plus.unsplash.com/premium_photo-1674180786953-4223a4208d9a?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
+                    </div>
+                    <div class="w-4/5 h-full flex flex-col justify-between">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-base font-semibold text-gray-900 dark:text-white">Gabriela Rodriguez</h3>
+                            <span class="text-sm text-gray-800 text dark:text-white">13:30</span>
+                        </div>
+                      <p class="block text-xs font-normal text-gray-500 dark:text-white"><span class="text-lg text-cyan-500 mr-1">&#x2713;&#x2713;</span>Gabriela, buen dia. Si, efectivamente.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="bg-white w-full p-2 border-b-2 border-gray-200 dark:bg-gray-500">
+                <div class="flex items-start">
+                    <div class="w-1/5 md:w-24">
+                        <img class="mr-2 h-16 w-16 rounded-full object-cover" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
+                    </div>
+                    <div class="w-4/5 h-full flex flex-col justify-between">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-base font-semibold text-gray-900 dark:text-white">Felipe Massa</h3>
+                            <span class="text-sm text-gray-800 text dark:text-white">12:12</span>
+                        </div>
+                      <p class="block text-xs font-normal text-gray-500 dark:text-white"><span class="text-lg text-cyan-500 mr-1">&#x2713;&#x2713;</span>Ya estoy disponible por si queres comunicarte.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="bg-white w-full p-2 border-b-2 border-gray-200 dark:bg-gray-500">
+                <div class="flex items-start">
+                    <div class="w-1/5 md:w-24">
+                        <img class="mr-2 h-16 w-16 rounded-full object-cover" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=3023&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
+                    </div>
+                    <div class="w-4/5 h-full flex flex-col justify-between">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-base font-semibold text-gray-900 dark:text-white">Enzo Francescoli</h3>
+                            <span class="text-sm text-gray-800 text dark:text-white">9:24</span>
+                        </div>
+                      <p class="block text-xs font-normal text-gray-500 dark:text-white">Buen dia doc! Cuando era el proximo turno?</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="bg-white w-full p-2 border-b-2 border-gray-200 dark:bg-gray-500">
+                <div class="flex items-start">
+                    <div class="w-1/5 md:w-24">
+                        <img class="mr-2 h-16 w-16 rounded-full object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
+                    </div>
+                    <div class="w-4/5 h-full flex flex-col justify-between">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-base font-semibold text-gray-900 dark:text-white">Mauro Lombardo</h3>
+                            <span class="text-sm text-gray-800 text dark:text-white">6:30</span>
+                        </div>
+                      <p class="block text-xs font-normal text-gray-500 dark:text-white">Hola Federico. Estaba interesado en contratar sus servicios de acompañamiento.</p>
+                    </div>
+                  </div>
+            </div>
+ 
+            
+        </div>
+    </main>
+    <!--Footer-->
+    <footer class="w-full text-center fixed bottom-0 bg-red-500 p-2 text-white font-bold">
+        <nav class="flex">
+            <a class="w-1/2 hover:cursor-pointer" id="miperfil">Mi Perfil</a>
+            <a class="w-1/2 hover:cursor-pointer" id="chats">Mensajes</a>
+        </nav>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="darkmode.js"></script>
+</body>
+</html>
