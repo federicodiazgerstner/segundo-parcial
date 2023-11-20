@@ -9,7 +9,7 @@
 </head>
 <body class="bg-gray-100 dark:bg-black">
     <!--Navbar-->
-    <nav class="w-screen mt-2 pr-4 flex justify-end">
+    <nav class="w-screen p-4 mb-2 flex justify-end dark:bg-gray-900">
       <div class="dark:bg-gray-900 justify-center flex flex-row items-center">
           <div class="flex flex-row justify-between toggle">
               <label for="dark-toggle" class="flex items-center cursor-pointer">
@@ -32,7 +32,7 @@
             </div>
             <!--Cards de Contacto-->
             <div class="md:flex flex-wrap">
-                <div class="mb-4 md:w-2/5 md:mx-2 rounded-lg bg-white p-4 dark:bg-gray-500">
+                <div class="mb-4 md:w-2/5 md:mx-2 rounded-lg bg-white p-4 dark:bg-gray-900">
                     <div class="flex items-center justify-between">
                       <div class="flex items-center">
                         <img class="mr-2 h-20 w-20 rounded-full object-cover" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
@@ -41,7 +41,7 @@
                           <span class="block text-xs font-normal text-gray-500 dark:text-gray-200 ">Experiencia: 2 años</span>
                         </div>
                       </div>
-                      <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 rounded">Contactar</button>
+                      <button id="#contacto1" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-2 rounded">Contactar</button>
                     </div>
                     <div class="mt-6 flex items-center justify-between text-sm font-semibold text-gray-900">
                       <div class="flex dark:text-white">
@@ -56,7 +56,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="mb-4 md:w-2/5 md:mx-2 rounded-lg bg-white p-4 dark:bg-gray-500">
+                <div class="mb-4 md:w-2/5 md:mx-2 rounded-lg bg-white p-4 dark:bg-gray-900">
                     <div class="flex items-center justify-between">
                       <div class="flex items-center">
                         <img class="mr-2 h-20 w-20 rounded-full object-cover" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=3161&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
@@ -65,7 +65,7 @@
                           <span class="block text-xs font-normal text-gray-500 dark:text-gray-200">Experiencia: 6 años</span>
                         </div>
                       </div>
-                      <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 rounded">Contactar</button>
+                      <button id="#contacto2" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-2 rounded">Contactar</button>
                     </div>
                     <div class="mt-6 flex items-center justify-between text-sm font-semibold text-gray-900">
                       <div class="flex dark:text-white">
@@ -80,7 +80,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="mb-4 md:w-2/5 md:mx-2 rounded-lg bg-white p-4 dark:bg-gray-500">
+                <div class="mb-4 md:w-2/5 md:mx-2 rounded-lg bg-white p-4 dark:bg-gray-900">
                     <div class="flex items-center justify-between">
                       <div class="flex items-center">
                         <img class="mr-2 h-20 w-20 rounded-full object-cover" src="https://plus.unsplash.com/premium_photo-1670884441012-c5cf195c062a?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
@@ -89,7 +89,7 @@
                           <span class="block text-xs font-normal text-gray-500 dark:text-gray-200">Experiencia: 4 años</span>
                         </div>
                       </div>
-                      <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 rounded">Contactar</button>
+                      <button id="#contacto3" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-2 rounded">Contactar</button>
                     </div>
                     <div class="mt-6 flex items-center justify-between text-sm font-semibold text-gray-900">
                       <div class="flex dark:text-white">
@@ -107,70 +107,73 @@
             </div>
         </div>
         <div id="chats-section" class="hidden">
+            <div class="w-screen flex items-center justify-center">
+              <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-2 rounded w-2/5 md:w-1/4">Nuevo chat</button>
+            </div>
             <div class="p-2">
-                <h2 class="text-lg font-semibold text-gray-900">Chats recientes</h2>
+                <h2 class="text-lg font-semibold text-gray-900 dark:text-white">Chats recientes</h2>
             </div>
             <!--Chat cards-->
-            <div class="bg-white w-full p-2 border-b-2 border-gray-200">
+            <div class="bg-white w-full p-2 border-b-2 rounded-lg border-gray-200 dark:bg-gray-900 dark:border-gray-500">
                 <div class="flex items-start">
                     <div class="w-1/5 md:w-24">
                         <img class="mr-2 h-16 w-16 rounded-full object-cover" src="https://plus.unsplash.com/premium_photo-1670884441012-c5cf195c062a?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
                     </div>
                     <div class="w-4/5 h-full flex flex-col justify-between">
                         <div class="flex items-center justify-between">
-                            <h3 class="text-base font-semibold text-gray-900">Maria Sharapova</h3>
-                            <span class="text-sm text-gray-800">19:45</span>
+                            <h3 class="text-base font-semibold text-gray-900 dark:text-white">Maria Sharapova</h3>
+                            <span class="text-sm text-gray-800 dark:text-white">19:45</span>
                         </div>
-                      <p class="block text-xs font-normal text-gray-500">Hola, como estas? Queria que vayamos coordinando nuestro turno del dia miercoles   </p>
+                      <p class="block text-xs font-normal text-gray-500 dark:text-gray-200">Hola, como estas? Queria que vayamos coordinando nuestro turno del dia miercoles   </p>
                     </div>
                   </div>
             </div>
-            <div class="bg-white w-full p-2 border-b-2 border-gray-200">
+            <div class="bg-white w-full p-2 border-b-2 rounded-lg border-gray-200 dark:bg-gray-900 dark:border-gray-500">
                 <div class="flex items-start">
                     <div class="w-1/5 md:w-24">
                         <img class="mr-2 h-16 w-16 rounded-full object-cover" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
                     </div>
                     <div class="w-4/5 h-full flex flex-col justify-between">
                         <div class="flex items-center justify-between">
-                            <h3 class="text-base font-semibold text-gray-900">Boi Olmi</h3>
-                            <span class="text-sm text-gray-800 text">08:30</span>
+                            <h3 class="text-base font-semibold text-gray-900 dark:text-white">Boi Olmi</h3>
+                            <span class="text-sm text-gray-800 text dark:text-white">08:30</span>
                         </div>
-                      <p class="block text-xs font-normal text-gray-500"><span class="text-lg text-cyan-500 mr-1">&#x2713;&#x2713;</span>Buen dia doc! Cuando era el proximo turno?</p>
+                      <p class="block text-xs font-normal text-gray-500 dark:text-gray-200"><span class="text-lg text-cyan-500 mr-1">&#x2713;&#x2713;</span>Buen dia doc! Cuando era el proximo turno?</p>
                     </div>
                   </div>
             </div>
-            <div class="bg-white w-full p-2 border-b-2 border-gray-200">
+            <div class="bg-white w-full p-2 border-b-2 rounded-lg border-gray-200 dark:bg-gray-900 dark:border-gray-500">
                 <div class="flex items-start">
                     <div class="w-1/5 md:w-24">
                         <img class="mr-2 h-16 w-16 rounded-full object-cover" src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
                     </div>
                     <div class="w-4/5 h-full flex flex-col justify-between">
                         <div class="flex items-center justify-between">
-                            <h3 class="text-base font-semibold text-gray-900">Franco Armani</h3>
-                            <span class="text-sm text-gray-800 text">07:55</span>
+                            <h3 class="text-base font-semibold text-gray-900 dark:text-white">Franco Armani</h3>
+                            <span class="text-sm text-gray-800 text dark:text-white">07:55</span>
                         </div>
-                      <p class="block text-xs font-normal text-gray-500">Hola, te recuerdo el turno de hoy a las 12:30. Confirmas?</p>
+                      <p class="block text-xs font-normal text-gray-500 dark:text-gray-200">Hola, te recuerdo el turno de hoy a las 12:30. Confirmas?</p>
                     </div>
                   </div>
             </div>
-            <div class="bg-white w-full p-2 border-b-2 border-gray-200">
+            <div class="bg-white w-full p-2 border-b-2 rounded-lg border-gray-200 dark:bg-gray-900 dark:border-gray-500">
                 <div class="flex items-start">
                     <div class="w-1/5 md:w-24">
                         <img class="mr-2 h-16 w-16 rounded-full object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=3164&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
                     </div>
                     <div class="w-4/5 h-full flex flex-col justify-between">
                         <div class="flex items-center justify-between">
-                            <h3 class="text-base font-semibold text-gray-900">Dafne Gossn</h3>
-                            <span class="text-sm text-gray-800 text">hace 2 días</span>
+                            <h3 class="text-base font-semibold text-gray-900 dark:text-white">Dafne Gossn</h3>
+                            <span class="text-sm text-gray-800 text dark:text-white">hace 2 días</span>
                         </div>
-                      <p class="block text-xs font-normal text-gray-500">Lamentablemente no voy a poder, mi agenda esta ocupada hasta Enero.</p>
+                      <p class="block text-xs font-normal text-gray-500 dark:text-gray-200">Lamentablemente no voy a poder, mi agenda esta ocupada hasta Enero.</p>
                     </div>
                   </div>
             </div>
         </div>
     </main>
     <!--Footer-->
-    <footer class="w-full text-center fixed bottom-0 bg-red-500 p-2 text-white font-bold">
+    <footer class="w-full text-center fixed bottom-0 bg-red-500 p-2 text-white font-bold dark:bg-gray-900">
         <nav class="flex">
             <a class="w-1/2 hover:cursor-pointer" id="profesionales">Profesionales</a>
             <a class="w-1/2 hover:cursor-pointer" id="chats">Mensajes</a>
